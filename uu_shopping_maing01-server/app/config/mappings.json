@@ -1,0 +1,71 @@
+{
+  "{vendor}-{uuApp}-{uuSubApp}": {
+    "useCaseMap": {
+      "sys/uuSubAppInstance/commence": {
+        "realization": "api/controllers/ShoppingMainController.commence",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/uuAppWorkspace/init": {
+        "realization": "api/controllers/ShoppingMainController.init",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/uuAppWorkspace/_initFinalize": {
+        "realization": "api/controllers/ShoppingMainController._initFinalize",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/uuAppWorkspace/_initFinalizeRollback": {
+        "realization": "api/controllers/ShoppingMainController._initFinalizeRollback",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/uuAppWorkspace/load": {
+        "realization": "api/controllers/ShoppingMainController.load",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "sys/uuAppWorkspace/loadBasicData": {
+        "realization": "api/controllers/ShoppingMainController.loadBasicData",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "sys/uuAppWorkspace/setStateClosed": {
+        "realization": "api/controllers/ShoppingMainController.setStateClosed",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/uuAppWorkspace/_setStateClosedFinalize": {
+        "realization": "api/controllers/ShoppingMainController._setStateClosedFinalize",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/uuAppWorkspace/clear": {
+        "realization": "api/controllers/ShoppingMainController.clear",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/uuAppWorkspace/_clearFinalize": {
+        "realization": "api/controllers/ShoppingMainController._clearFinalize",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "defaultUve": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "UVE"
+      },
+      "sys/uuAppWorkspace/initUve": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "UVE"
+      },
+      "sys/uuAppWorkspace/apiConsole": {
+        "realization": "api-console.html",
+        "httpMethod": "GET",
+        "type": "UVE"
+      }
+    }
+  }
+}

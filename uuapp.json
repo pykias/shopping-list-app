@@ -1,0 +1,19 @@
+{
+  "product": "uu_shopping_maing01",
+  "version": "0.1.0",
+  "license": "License Commercial",
+  "description": {
+    "en": "",
+    "cs": ""
+  },
+  "devkit": {
+    "development": {
+      "uuAppBoxRegistryBaseUri": "----- VALUE REQUIRED -----",
+      "uuCloudUniverseBaseUri": "----- VALUE REQUIRED -----",
+      "uuCloudLogStoreBaseUri": "----- VALUE REQUIRED -----"
+    }
+  },
+  "uu_shopping_maing01-server": {},
+  "uu_shopping_maing01-uuscriptlib": {},
+  "uu_shopping_maing01-hi": {}
+}

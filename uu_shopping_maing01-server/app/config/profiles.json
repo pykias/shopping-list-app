@@ -1,0 +1,63 @@
+{
+  "{asid}": {
+    "profileList": ["AsidAuthorities", "AsidOperatives", "AsidLicenseOwner", "Public"],
+    "useCaseMap": {
+      "sys/uuSubAppInstance/commence": {
+        "sysStateList": ["active", "restricted"],
+        "profileList": ["AsidAuthorities", "AsidOperatives"]
+      }
+    }
+  },
+  "*": {
+    "profileList": ["Authorities", "Operatives", "Auditors", "SystemIdentity", "AwidInitiator", "Authenticated", "Public"],
+    "useCaseMap": {
+      "sys/uuAppWorkspace/init": {
+        "sysStateList": ["assigned", "beingInitialized"],
+        "profileList": ["AwidInitiator"]
+      },
+      "sys/uuAppWorkspace/_initFinalize": {
+        "sysStateList": ["beingInitialized"],
+        "profileList": ["SystemIdentity"]
+      },
+      "sys/uuAppWorkspace/_initFinalizeRollback": {
+        "sysStateList": ["beingInitialized"],
+        "profileList": ["SystemIdentity"]
+      },
+      "sys/uuAppWorkspace/load": {
+        "sysStateList": ["created", "assigned", "beingInitialized", "active", "restricted", "readOnly", "closed", "suspended"],
+        "profileList": ["Authenticated"]
+      },
+      "sys/uuAppWorkspace/loadBasicData": {
+        "sysStateList": ["created", "assigned", "beingInitialized", "active", "restricted", "readOnly", "closed", "suspended"],
+        "profileList": ["Public"]
+      },
+      "sys/uuAppWorkspace/setStateClosed": {
+        "sysStateList": ["restricted"],
+        "profileList": ["Authorities"]
+      },
+      "sys/uuAppWorkspace/_setStateClosedFinalize": {
+        "sysStateList": ["restricted"],
+        "profileList": ["SystemIdentity"]
+      },
+      "sys/uuAppWorkspace/clear": {
+        "sysStateList": ["restricted"],
+        "profileList": ["Authorities", "AwidInitiator"]
+      },
+      "sys/uuAppWorkspace/_clearFinalize": {
+        "sysStateList": ["restricted"],
+        "profileList": ["SystemIdentity"]
+      },
+      "defaultUve": {
+        "profileList": ["Public"]
+      },
+      "sys/uuAppWorkspace/initUve": {
+        "sysStateList": ["assigned", "beingInitialized"],
+        "profileList": ["Public", "AwidInitiator"]
+      },
+      "sys/uuAppWorkspace/apiConsole": {
+        "sysStateList": ["created", "assigned", "beingInitialized", "active", "restricted", "readOnly", "closed", "suspended"],
+        "profileList": ["Authenticated"]
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "uu_shopping_maing01-uuscriptlib",
+  "version": "0.1.0",
+  "description": "",
+  "license": "License Commercial",
+  "namespace": "UuShopping",
+  "spec": "nodejs-uuscriptlib; uu_appg01@1.12.3",
+  "dependencies": {
+    "uu_consoleg02-uulib": "^1.0.0"
+  },
+  "devDependencies": {
+    "uu_appg01_devkit": "^6.2.0",
+    "uu_script_devkitg01": "^1.8.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "clean": "uu_script_devkitg01 clean",
+    "test": "uu_script_devkitg01 test",
+    "prettify": "uu_script_devkitg01 prettify",
+    "createScript": "uu_script_devkitg01 createScript",
+    "remoteRunScript": "uu_script_devkitg01 remoteRunScript",
+    "uploadScript": "uu_script_devkitg01 uploadScript",
+    "uuAppBox": "uu_script_devkitg01 uuAppBox",
+    "build": "uu_script_devkitg01 build",
+    "package": "uu_script_devkitg01 package"
+  },
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "prettier": {
+    "printWidth": 120
+  }
+}

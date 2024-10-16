@@ -1,0 +1,60 @@
+{
+  "name": "uu_shopping_maing01-hi",
+  "version": "0.1.0",
+  "private": true,
+  "description": "",
+  "license": "License Commercial",
+  "namespace": "UuShopping",
+  "spec": "uu5-app; uu_appg01_devkit@6.2.0; uu5devkitg01-plugin@1.2.1",
+  "dependencies": {
+    "uu5codekitg01": "^2.4.1",
+    "uu5g04": "^1.58.9",
+    "uu5g05": "^1.30.3",
+    "uu5g05-browser-compatibility": "^1.30.3",
+    "uu5g05-elements": "^1.30.3",
+    "uu5g05-forms": "^1.30.3",
+    "uu5loaderg01": "^1.7.0",
+    "uu_plus4u5g02": "^1.28.3",
+    "uu_plus4u5g02-app": "^1.28.3",
+    "uu_plus4u5g02-elements": "^1.28.3"
+  },
+  "uuBuildSettings": {
+    "externals": {}
+  },
+  "devDependencies": {
+    "uu_appg01_devkit": "^6.2.0",
+    "uu5devkitg01-plugin": "^1.2.1",
+    "uu_cloudg02-devkit": "^0.12.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "clean": "uu_appg01_devkit clean",
+    "test": "uu_appg01_devkit test",
+    "build": "uu_appg01_devkit build",
+    "package": "uu_appg01_devkit package",
+    "start": "uu_appg01_devkit start",
+    "prettify": "uu_appg01_devkit prettify",
+    "vulnerabilityScan": "uu_appg01_devkit vulnerabilityScan",
+    "uuAppDevKitUpgrade": "uu_appg01_devkit uuAppDevKitUpgrade",
+    "uu5Generate": "uu5devkitg01-plugin generate",
+    "uu5LsiExport": "uu5devkitg01-plugin lsiExport",
+    "uu5LsiImport": "uu5devkitg01-plugin lsiImport",
+    "uuCloudg02AppBoxCopy": "uu_cloudg02-devkit appBoxCopy",
+    "uuCloudg02AppBoxExport": "uu_cloudg02-devkit appBoxExport",
+    "uuCloudg02AppBoxImport": "uu_cloudg02-devkit appBoxImport",
+    "uuCloudg02AppBox": "uu_cloudg02-devkit appBox",
+    "uuCloudg02CleanResources": "uu_cloudg02-devkit cleanResources",
+    "uuCloudg02DeployList": "uu_cloudg02-devkit deployList",
+    "uuCloudg02Deploy": "uu_cloudg02-devkit deploy",
+    "uuCloudg02LogExport": "uu_cloudg02-devkit logExport",
+    "uuCloudg02Swap": "uu_cloudg02-devkit swap",
+    "uuCloudg02Undeploy": "uu_cloudg02-devkit undeploy",
+    "uuCloudg02VulnerabilityScan": "uu_cloudg02-devkit vulnerabilityScan",
+    "uu5DocUpdateExamples": "uu5devkitg01-plugin docUpdateExamples"
+  },
+  "prettier": {
+    "printWidth": 120
+  }
+}
